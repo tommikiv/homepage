@@ -3,8 +3,8 @@ export default function Status() {
         <div className="status">
             <div className="status-header">
                 <h2>* NOW</h2>
-                <button>Github</button>
-                <button>LinkedIn</button>
+                <button onClick={() => window.open('https://github.com/tommikiv', '_blank')}>Github</button>
+                <button onClick={() => window.open('https://www.linkedin.com/in/tommikivikangas/', '_blank')}>LinkedIn</button>
             </div>
 
             <p>

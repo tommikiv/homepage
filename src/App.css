@@ -68,3 +68,17 @@
 .status-header button {
   flex: 1;
 }
+
+button {
+  background: none;
+  border-radius: 1rem;
+  color: var(--text-primary);
+  border: 2px dashed var(--text-primary);
+
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
