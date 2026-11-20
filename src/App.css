@@ -33,15 +33,16 @@
 }
 
 .intro {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   align-items: flex-end;
-  gap: 12rem;
+  gap: 4rem;
 }
 
 .intro h1 {
   font-size: 3rem;
   margin: 0;
+  height: 100%;
 }
 
 .status {
