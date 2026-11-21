@@ -18,6 +18,11 @@
   color: var(--text-primary);
 }
 
+.navbar-light {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
 .nav-links {
   margin-right: 2rem;
 }
@@ -32,6 +37,11 @@
   text-decoration: none;
   margin: 0 1rem;
   font-size: 1.5rem;
+}
+
+.navbar-light a,
+.navbar-light h1 {
+  color: var(--text-secondary);
 }
 
 .content {

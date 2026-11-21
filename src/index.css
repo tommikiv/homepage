@@ -2,8 +2,11 @@
 
 :root {
   --text-primary: #ffffff;
+  --text-secondary: #000000;
+  --accent: #ffffff;
 
   --bg-primary: #131313;
+  --bg-secondary: #e7e0d2;
 
   --accent: #ffffff;
 }

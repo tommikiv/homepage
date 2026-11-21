@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
+  const location = useLocation();
+  const isAboutPage = location.pathname === "/about";
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isAboutPage ? "navbar-light" : ""}`}>
       <Link to="/">
         <h1>Tommikiv</h1>
       </Link>
