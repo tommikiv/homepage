@@ -5,12 +5,21 @@
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   padding: 1rem;
-  background-color: var(--bg-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: var(--text-primary);
+}
+
+.nav-links {
+  margin-right: 2rem;
 }
 
 .navbar h1 {
@@ -26,13 +35,22 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+}
+
+.intro-section {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 8rem 2rem 2rem;
+
   display: flex;
   align-items: flex-end;
-  padding: 2rem;
 }
 
 .intro {
+  width: 100%;
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: flex-end;

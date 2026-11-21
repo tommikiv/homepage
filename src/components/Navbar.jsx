@@ -1,13 +1,17 @@
-export default function Navbar() {
-    return (
-        <nav className="navbar">
-            <h1>Tommikiv</h1>
+import { Link } from "react-router-dom";
 
-            <div className="nav-links">
-                <a href="#">Feed</a>
-                <a href="#">Projects</a>
-                <a href="#">Who am I</a>
-            </div>
-        </nav>
-    )
+export default function Navbar() {
+  return (
+    <nav className="navbar">
+      <Link to="/">
+        <h1>Tommikiv</h1>
+      </Link>
+
+      <div className="nav-links">
+        <a href="#">Feed</a>
+        <a href="#">Projects</a>
+        <Link to="/about">About</Link>
+      </div>
+    </nav>
+  );
 }

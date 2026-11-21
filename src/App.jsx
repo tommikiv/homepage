@@ -1,17 +1,20 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import Intro from './components/Intro'
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Intro from "./components/Intro";
+import About from "./pages/About";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="home">
+    <BrowserRouter basename="/homepage">
       <Navbar />
 
-      <main className="content">
-        <Intro />
-      </main>
-    </div>
-  )
+      <Routes>
+        <Route path="/" element={<Intro />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

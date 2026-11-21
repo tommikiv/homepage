@@ -1,14 +1,21 @@
-import Status from './Status'
+import Status from "./Status";
 
 export default function Intro() {
-    return (
+  // Todo:
+  // - Dont use "content" because it could apply to anything
+  // - Add an image or something visual to the intro section
+  return (
+    <main className="content">
+      <section className="intro-section">
         <div className="intro">
-            <h1>
-                Focused on visually pleasing experiences while understanding the
-                systems behind them.
-            </h1>
+          <h1>
+            Focused on visually pleasing experiences while understanding the
+            systems behind them.
+          </h1>
 
-            <Status />
+          <Status />
         </div>
-    )
+      </section>
+    </main>
+  );
 }

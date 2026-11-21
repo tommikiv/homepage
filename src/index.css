@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap");
 
 :root {
   --text-primary: #ffffff;
@@ -13,6 +13,6 @@ body {
 
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  font-family: 'Faculty Glyphic', sans-serif;
 
+  font-family: "Faculty Glyphic", sans-serif;
 }
